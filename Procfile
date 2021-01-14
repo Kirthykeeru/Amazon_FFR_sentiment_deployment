@@ -1,1 +1,1 @@
-web: gunicorn app:afr_model
+web: gunicorn app:app

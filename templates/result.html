@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #ff9900;
+}
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+</head>
+<body>
+	<h1 align="center">
+		<font face="Lato" color="white" size="7">
+			SENTIMENT ANALYSIS WITH MACHINE LEARNING & PYTHON
+		</font>
+	</h1>
+	
+	<p style="color:white; font-size:30px">Result of comment</p>
+	<div class="results">
+
+
+		
+	{% if prediction == 1%}
+	<p style="color:green; font-size:100px">Positive</p>
+	{% elif prediction == 0%}
+	<p style="color:red; font-size:100px">Negative</p>
+	{% endif %}
+
+	</div>
+</body>

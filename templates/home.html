@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #ff9900;
+}
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+	
+</head>
+<body>
+
+
+	<h1 align="center">
+		<font face="Lato" color="white" size="7">
+			SENTIMENT ANALYSIS WITH MACHINE LEARNING & PYTHON
+		</font>
+	</h1>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<br /><br /><br /><br /><br />
+        <p style="color:white; font-size:30px">Enter Your Text Here</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="6" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="Predict">
+		
+		</form>
+		
+	</div>
+
+</body>
+</html>
